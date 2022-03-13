@@ -2,8 +2,9 @@ const express = require('express');
 const app = express();
 
 
-app.get('/',(req,res) => {
-    console.log('Hello World');
+app.post('/vote/:id',(req,res) => {
+    const candidateId = req.params.id;
+    console.log(candidateId);
 })
 
 
